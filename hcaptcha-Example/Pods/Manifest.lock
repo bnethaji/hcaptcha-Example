@@ -1,0 +1,18 @@
+PODS:
+  - HCaptcha (1.5.3):
+    - HCaptcha/Core (= 1.5.3)
+  - HCaptcha/Core (1.5.3)
+
+DEPENDENCIES:
+  - HCaptcha
+
+SPEC REPOS:
+  trunk:
+    - HCaptcha
+
+SPEC CHECKSUMS:
+  HCaptcha: de4367abe376f20cbfe69d02a3977882ab43fc09
+
+PODFILE CHECKSUM: d56b14cd91400f4eb0af1e22718ef3089328a46d
+
+COCOAPODS: 1.11.2

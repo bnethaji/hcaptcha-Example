@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: table;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        #hcaptcha-container {
+            margin-top: 5px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        /* overwrite hCaptcha iframe overlay which adds a #FFF background with opacity 0.05 */
+        div > div:nth-child(2) {
+            opacity: 0 !important;
+        }
+    </style>
+    
+    <script src="${endpoint}"></script>
+    <script type="text/javascript">
+      const post = function(value) {
+        window.webkit.messageHandlers.hcaptcha.postMessage(value);
+      };
+
+      console.log = function(message) {
+        post({ log: message });
+      };
+
+      const execute = function() {
+        console.log("challenge executing");
+
+        try {
+          if ("${size}" === 'invisible') {
+            hcaptcha.execute();
+          }
+          post({ action: "showHCaptcha" });
+          console.log("showing challenge");
+        } catch (e) {
+          console.log("failed to show challenge");
+          post({ error: 29 });
+        }
+      };
+
+      const reset = function() {
+        console.log("challenge resetting");
+        hcaptcha.reset();
+        post({ action: "didLoad" });
+      };
+
+      const onPass = function(token) {
+        console.log("challenge got token");
+        console.log(token);
+        post({ token });
+      };
+
+      const expiredCallback = function() {
+        console.log("expired challenge");
+        post({ error: 15 });
+      };
+
+      const errorCallback = function() {
+        console.log("challenge error: probably rate limit exceeded");
+        post({ error: 31 });
+      };
+
+      const closeCallback = function() {
+        console.log("challenge closed by user");
+        post({ error: 30 });
+      };
+
+      var onloadCallback = function() {
+        try {
+          console.log("challenge onload starting");
+          hcaptcha.render("hcaptcha-container", {
+            sitekey: "${apiKey}",
+            size: "${size}",
+            "callback": onPass,
+            "close-callback": closeCallback,
+            "expired-callback": expiredCallback,
+            "chalexpired-callback": expiredCallback,
+            "error-callback": errorCallback
+          });
+
+          // have loaded by this point; render is sync.
+          post({ action: "didLoad" });
+        } catch (e) {
+          console.log("challenge failed to render");
+          post({ error: 29 });
+        }
+      };
+        
+      document.body.onclick = function () {
+          if (window.hcaptcha) {
+              window.hcaptcha.close();
+          } else {
+              post({ error: 30 });
+          }
+      };
+        
+    </script>
+  </head>
+  <body>
+    <div id="hcaptcha-container">
+    </div>
+  </body>
+</html>

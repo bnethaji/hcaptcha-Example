@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121C0085A1ED698D6E4E27F277B47DC8 /* HCaptchaWebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E8AE9787479A4BCA938D34876BEC5 /* HCaptchaWebViewManager.swift */; };
+		32B63E0DDC39E569BB25B10A7A3B9BD0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */; };
+		3A201F5DB5106DC9584BB89BB3EE27C8 /* HCaptcha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE87510FBF58BCEA095B681F4A9D02B /* HCaptcha-dummy.m */; };
+		585F87A45F8BF22FBF459C889887FF7F /* hcaptcha.html in Resources */ = {isa = PBXBuildFile; fileRef = 7EE862DBCDFD16DDA58D76B514047AAB /* hcaptcha.html */; };
+		72AE55871197539955F4C7F1103BC9AD /* String+Dict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFA3C6693525DFBDAB076F01155F5F /* String+Dict.swift */; };
+		7562D54B79D235AF702F747ED16C9BA5 /* HCaptcha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1603B4192EB1DF31F0047922A566216A /* HCaptcha.bundle */; };
+		8A8651AC9C6813E570C03F4FDAB25443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */; };
+		8C3F1B18328542328462D4FBB7E78287 /* DispatchQueue+Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5FEA3077504967921836529FB85677 /* DispatchQueue+Throttle.swift */; };
+		93E4F407C739733993FEFDD5ED6907E1 /* HCaptcha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C5D4ADF7B1A0AD488DFAB0E447A9D5 /* HCaptcha.swift */; };
+		9A61AFB1465C997B18844DB885BB0A9A /* Pods-hcaptcha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 129933A2023D8CEFC6E8AC5BEF12A734 /* Pods-hcaptcha-dummy.m */; };
+		A1AE7787A06CA5D23DD5B205328F5844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */; };
+		AFBF01E8FC4F8447E5143C9BCE1EE029 /* HCaptchaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F07E8402D4410623416535F1F3D6DB5 /* HCaptchaResult.swift */; };
+		C28B5DD8797060E1DF884C2BE3B20117 /* Pods-hcaptcha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B74782F0133DFB610BBF3147F5BB6DF5 /* Pods-hcaptcha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D622C20B6CCB24C78140994A7601E0FA /* HCaptcha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7C73B76FF4E8054764B7CFED96BA8A /* HCaptcha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D780BC68D2460BF443A7E1FFC517EE9C /* HCaptchaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A257A82987165D2F36865B332AE90 /* HCaptchaError.swift */; };
+		ECEFC21372B7D1A79120941CE0DC85C2 /* HCaptchaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682E83B1D75A22DF6F1F273DDC1273C0 /* HCaptchaDecoder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DD250AB1833DB98AAE5DCB8DCC1F0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676CD365B0D07C7AA7BF3713FA25D996;
+			remoteInfo = HCaptcha;
+		};
+		94FE5711359A38732E22941148E012C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E1D455C6269C148618AAA2531E9515E;
+			remoteInfo = "HCaptcha-HCaptcha";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01186AD5EDE8CC7E4B986B228031E728 /* Pods-hcaptcha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hcaptcha.debug.xcconfig"; sourceTree = "<group>"; };
+		129933A2023D8CEFC6E8AC5BEF12A734 /* Pods-hcaptcha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hcaptcha-dummy.m"; sourceTree = "<group>"; };
+		1603B4192EB1DF31F0047922A566216A /* HCaptcha.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCaptcha.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		177A257A82987165D2F36865B332AE90 /* HCaptchaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCaptchaError.swift; path = HCaptcha/Classes/HCaptchaError.swift; sourceTree = "<group>"; };
+		1BA81706C8C171A37C4DE62C6F293B31 /* HCaptcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCaptcha.release.xcconfig; sourceTree = "<group>"; };
+		1F07E8402D4410623416535F1F3D6DB5 /* HCaptchaResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCaptchaResult.swift; path = HCaptcha/Classes/HCaptchaResult.swift; sourceTree = "<group>"; };
+		233E7C98805578DFFD3B0F4AB9B18935 /* ResourceBundle-HCaptcha-HCaptcha-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HCaptcha-HCaptcha-Info.plist"; sourceTree = "<group>"; };
+		2693086B439F37567D9B0F48B9F2CCFE /* HCaptcha-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HCaptcha-Info.plist"; sourceTree = "<group>"; };
+		2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		305DAF9DA9FD4685482E2EEF9B0E3333 /* Pods-hcaptcha */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-hcaptcha"; path = Pods_hcaptcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		44E298998370F3FD66779368DE98E711 /* Pods-hcaptcha-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hcaptcha-Info.plist"; sourceTree = "<group>"; };
+		682E83B1D75A22DF6F1F273DDC1273C0 /* HCaptchaDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCaptchaDecoder.swift; path = HCaptcha/Classes/HCaptchaDecoder.swift; sourceTree = "<group>"; };
+		7238338C2F2028C781F09AC06ED8ABC9 /* Pods-hcaptcha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hcaptcha-frameworks.sh"; sourceTree = "<group>"; };
+		73AFA3C6693525DFBDAB076F01155F5F /* String+Dict.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Dict.swift"; path = "HCaptcha/Classes/String+Dict.swift"; sourceTree = "<group>"; };
+		77D4E0BD7F1D57F34AECAD5A61200640 /* HCaptcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HCaptcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8804B672C2C4E5DFC4D7C069B21FE8 /* HCaptcha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HCaptcha.modulemap; sourceTree = "<group>"; };
+		7B2436DA71D97F87304CFBC447E778AC /* HCaptcha-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCaptcha-prefix.pch"; sourceTree = "<group>"; };
+		7B7C73B76FF4E8054764B7CFED96BA8A /* HCaptcha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCaptcha-umbrella.h"; sourceTree = "<group>"; };
+		7EE862DBCDFD16DDA58D76B514047AAB /* hcaptcha.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = hcaptcha.html; path = HCaptcha/Assets/hcaptcha.html; sourceTree = "<group>"; };
+		89287E6CEF98F93F33040C751D18CED5 /* Pods-hcaptcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hcaptcha.release.xcconfig"; sourceTree = "<group>"; };
+		8D5FEA3077504967921836529FB85677 /* DispatchQueue+Throttle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Throttle.swift"; path = "HCaptcha/Classes/DispatchQueue+Throttle.swift"; sourceTree = "<group>"; };
+		9905A15B3E151CC09DB9B27D2B345F1E /* Pods-hcaptcha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hcaptcha.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB78DB827C34D694DEDDD7B8D864644F /* Pods-hcaptcha-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hcaptcha-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B74782F0133DFB610BBF3147F5BB6DF5 /* Pods-hcaptcha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hcaptcha-umbrella.h"; sourceTree = "<group>"; };
+		BCE87510FBF58BCEA095B681F4A9D02B /* HCaptcha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCaptcha-dummy.m"; sourceTree = "<group>"; };
+		DA5B0AC9CA1A8BF7C62D311EF59AE102 /* Pods-hcaptcha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hcaptcha-acknowledgements.plist"; sourceTree = "<group>"; };
+		E178A9782FE39019B34A232C2D4483AE /* HCaptcha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCaptcha.debug.xcconfig; sourceTree = "<group>"; };
+		F2C5D4ADF7B1A0AD488DFAB0E447A9D5 /* HCaptcha.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCaptcha.swift; path = HCaptcha/Classes/HCaptcha.swift; sourceTree = "<group>"; };
+		F75E8AE9787479A4BCA938D34876BEC5 /* HCaptchaWebViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HCaptchaWebViewManager.swift; path = HCaptcha/Classes/HCaptchaWebViewManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63D0A75A8440917000317790BE067C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8651AC9C6813E570C03F4FDAB25443 /* Foundation.framework in Frameworks */,
+				32B63E0DDC39E569BB25B10A7A3B9BD0 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D588D2DF4C380ADCCF9569D297847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD380BED38A146070C9E79C87250A4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AE7787A06CA5D23DD5B205328F5844 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4666CE1A84ECF5C342FAD3C508C69DE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F400774138E25421F63DB87EAB19DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77D4E0BD7F1D57F34AECAD5A61200640 /* HCaptcha.framework */,
+				1603B4192EB1DF31F0047922A566216A /* HCaptcha.bundle */,
+				305DAF9DA9FD4685482E2EEF9B0E3333 /* Pods-hcaptcha */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		336388E3A2DA9F8C8E4A0072D89983EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A8804B672C2C4E5DFC4D7C069B21FE8 /* HCaptcha.modulemap */,
+				BCE87510FBF58BCEA095B681F4A9D02B /* HCaptcha-dummy.m */,
+				2693086B439F37567D9B0F48B9F2CCFE /* HCaptcha-Info.plist */,
+				7B2436DA71D97F87304CFBC447E778AC /* HCaptcha-prefix.pch */,
+				7B7C73B76FF4E8054764B7CFED96BA8A /* HCaptcha-umbrella.h */,
+				E178A9782FE39019B34A232C2D4483AE /* HCaptcha.debug.xcconfig */,
+				1BA81706C8C171A37C4DE62C6F293B31 /* HCaptcha.release.xcconfig */,
+				233E7C98805578DFFD3B0F4AB9B18935 /* ResourceBundle-HCaptcha-HCaptcha-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HCaptcha";
+			sourceTree = "<group>";
+		};
+		3644763071ED52379D12E69F6787F7CF /* Pods-hcaptcha */ = {
+			isa = PBXGroup;
+			children = (
+				9905A15B3E151CC09DB9B27D2B345F1E /* Pods-hcaptcha.modulemap */,
+				AB78DB827C34D694DEDDD7B8D864644F /* Pods-hcaptcha-acknowledgements.markdown */,
+				DA5B0AC9CA1A8BF7C62D311EF59AE102 /* Pods-hcaptcha-acknowledgements.plist */,
+				129933A2023D8CEFC6E8AC5BEF12A734 /* Pods-hcaptcha-dummy.m */,
+				7238338C2F2028C781F09AC06ED8ABC9 /* Pods-hcaptcha-frameworks.sh */,
+				44E298998370F3FD66779368DE98E711 /* Pods-hcaptcha-Info.plist */,
+				B74782F0133DFB610BBF3147F5BB6DF5 /* Pods-hcaptcha-umbrella.h */,
+				01186AD5EDE8CC7E4B986B228031E728 /* Pods-hcaptcha.debug.xcconfig */,
+				89287E6CEF98F93F33040C751D18CED5 /* Pods-hcaptcha.release.xcconfig */,
+			);
+			name = "Pods-hcaptcha";
+			path = "Target Support Files/Pods-hcaptcha";
+			sourceTree = "<group>";
+		};
+		52FE1147AC385B4E51CD9DB67F933541 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C66172D25BC2542E0FAA8FD79742D13 /* HCaptcha */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A8C19EF62393FA9E43A2E6B552708BD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3644763071ED52379D12E69F6787F7CF /* Pods-hcaptcha */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7C66172D25BC2542E0FAA8FD79742D13 /* HCaptcha */ = {
+			isa = PBXGroup;
+			children = (
+				E71C2FAE369C5ACB5E7A02D463820ECB /* Core */,
+				336388E3A2DA9F8C8E4A0072D89983EB /* Support Files */,
+			);
+			path = HCaptcha;
+			sourceTree = "<group>";
+		};
+		A0F1611E8DED0A7E0170FAC627CFCAC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7EE862DBCDFD16DDA58D76B514047AAB /* hcaptcha.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				52FE1147AC385B4E51CD9DB67F933541 /* Pods */,
+				1F400774138E25421F63DB87EAB19DD3 /* Products */,
+				6A8C19EF62393FA9E43A2E6B552708BD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4666CE1A84ECF5C342FAD3C508C69DE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */,
+				2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E71C2FAE369C5ACB5E7A02D463820ECB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8D5FEA3077504967921836529FB85677 /* DispatchQueue+Throttle.swift */,
+				F2C5D4ADF7B1A0AD488DFAB0E447A9D5 /* HCaptcha.swift */,
+				682E83B1D75A22DF6F1F273DDC1273C0 /* HCaptchaDecoder.swift */,
+				177A257A82987165D2F36865B332AE90 /* HCaptchaError.swift */,
+				1F07E8402D4410623416535F1F3D6DB5 /* HCaptchaResult.swift */,
+				F75E8AE9787479A4BCA938D34876BEC5 /* HCaptchaWebViewManager.swift */,
+				73AFA3C6693525DFBDAB076F01155F5F /* String+Dict.swift */,
+				A0F1611E8DED0A7E0170FAC627CFCAC4 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73BE0A1D4ADCA3AB8E3054B713F3B9BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622C20B6CCB24C78140994A7601E0FA /* HCaptcha-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C733E14933F848437EA15AC204BA8332 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B5DD8797060E1DF884C2BE3B20117 /* Pods-hcaptcha-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D71A7EECB2C94594A9E1031AB809D60 /* Pods-hcaptcha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48FE6C2B63F124F95A8CD115DCEA882 /* Build configuration list for PBXNativeTarget "Pods-hcaptcha" */;
+			buildPhases = (
+				C733E14933F848437EA15AC204BA8332 /* Headers */,
+				55B9FD95FA05373743DFA156BEB9E103 /* Sources */,
+				FD380BED38A146070C9E79C87250A4FF /* Frameworks */,
+				AEBEC40B508730A08CFBE027FBAAB507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344BF44A6E0D9FC8F0BBAEC3F4BC4DDA /* PBXTargetDependency */,
+			);
+			name = "Pods-hcaptcha";
+			productName = Pods_hcaptcha;
+			productReference = 305DAF9DA9FD4685482E2EEF9B0E3333 /* Pods-hcaptcha */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E1D455C6269C148618AAA2531E9515E /* HCaptcha-HCaptcha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9087FD8CC0C1E977FC0D3F0CD9D3D9B8 /* Build configuration list for PBXNativeTarget "HCaptcha-HCaptcha" */;
+			buildPhases = (
+				DEC0D3F147190587659C5267C8ACF9C6 /* Sources */,
+				C9D588D2DF4C380ADCCF9569D297847A /* Frameworks */,
+				706B334CD1DF569ED67BA8D911328552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HCaptcha-HCaptcha";
+			productName = HCaptcha;
+			productReference = 1603B4192EB1DF31F0047922A566216A /* HCaptcha.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		676CD365B0D07C7AA7BF3713FA25D996 /* HCaptcha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1CAB1DA9B8AFF055C553A24C35F3D5 /* Build configuration list for PBXNativeTarget "HCaptcha" */;
+			buildPhases = (
+				73BE0A1D4ADCA3AB8E3054B713F3B9BE /* Headers */,
+				A0D01EA4E7CB605693F812BB4F912BD6 /* Sources */,
+				63D0A75A8440917000317790BE067C44 /* Frameworks */,
+				548DDA353236509E8EA78AA38CA00DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0288E698CC1DB689023F4DAB5A792307 /* PBXTargetDependency */,
+			);
+			name = HCaptcha;
+			productName = HCaptcha;
+			productReference = 77D4E0BD7F1D57F34AECAD5A61200640 /* HCaptcha.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1F400774138E25421F63DB87EAB19DD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				676CD365B0D07C7AA7BF3713FA25D996 /* HCaptcha */,
+				5E1D455C6269C148618AAA2531E9515E /* HCaptcha-HCaptcha */,
+				2D71A7EECB2C94594A9E1031AB809D60 /* Pods-hcaptcha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		548DDA353236509E8EA78AA38CA00DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7562D54B79D235AF702F747ED16C9BA5 /* HCaptcha.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706B334CD1DF569ED67BA8D911328552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585F87A45F8BF22FBF459C889887FF7F /* hcaptcha.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBEC40B508730A08CFBE027FBAAB507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55B9FD95FA05373743DFA156BEB9E103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A61AFB1465C997B18844DB885BB0A9A /* Pods-hcaptcha-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0D01EA4E7CB605693F812BB4F912BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3F1B18328542328462D4FBB7E78287 /* DispatchQueue+Throttle.swift in Sources */,
+				93E4F407C739733993FEFDD5ED6907E1 /* HCaptcha.swift in Sources */,
+				3A201F5DB5106DC9584BB89BB3EE27C8 /* HCaptcha-dummy.m in Sources */,
+				ECEFC21372B7D1A79120941CE0DC85C2 /* HCaptchaDecoder.swift in Sources */,
+				D780BC68D2460BF443A7E1FFC517EE9C /* HCaptchaError.swift in Sources */,
+				AFBF01E8FC4F8447E5143C9BCE1EE029 /* HCaptchaResult.swift in Sources */,
+				121C0085A1ED698D6E4E27F277B47DC8 /* HCaptchaWebViewManager.swift in Sources */,
+				72AE55871197539955F4C7F1103BC9AD /* String+Dict.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC0D3F147190587659C5267C8ACF9C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0288E698CC1DB689023F4DAB5A792307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HCaptcha-HCaptcha";
+			target = 5E1D455C6269C148618AAA2531E9515E /* HCaptcha-HCaptcha */;
+			targetProxy = 94FE5711359A38732E22941148E012C1 /* PBXContainerItemProxy */;
+		};
+		344BF44A6E0D9FC8F0BBAEC3F4BC4DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HCaptcha;
+			target = 676CD365B0D07C7AA7BF3713FA25D996 /* HCaptcha */;
+			targetProxy = 5DD250AB1833DB98AAE5DCB8DCC1F0EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		022814B4CB76AC4515D0A7DDDEA77929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA81706C8C171A37C4DE62C6F293B31 /* HCaptcha.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HCaptcha";
+				IBSC_MODULE = HCaptcha;
+				INFOPLIST_FILE = "Target Support Files/HCaptcha/ResourceBundle-HCaptcha-HCaptcha-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = HCaptcha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5B0A9EDA94071B66004E41B6A774E6CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01186AD5EDE8CC7E4B986B228031E728 /* Pods-hcaptcha.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-hcaptcha/Pods-hcaptcha-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hcaptcha/Pods-hcaptcha.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B68F15B1A2C81FFC2484A6073546BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E178A9782FE39019B34A232C2D4483AE /* HCaptcha.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCaptcha/HCaptcha-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCaptcha/HCaptcha-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HCaptcha/HCaptcha.modulemap";
+				PRODUCT_MODULE_NAME = HCaptcha;
+				PRODUCT_NAME = HCaptcha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9E27E80C24435797A4F013CBF9693F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89287E6CEF98F93F33040C751D18CED5 /* Pods-hcaptcha.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-hcaptcha/Pods-hcaptcha-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hcaptcha/Pods-hcaptcha.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDFAB632748BA132D44052E3932017F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA81706C8C171A37C4DE62C6F293B31 /* HCaptcha.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCaptcha/HCaptcha-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCaptcha/HCaptcha-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HCaptcha/HCaptcha.modulemap";
+				PRODUCT_MODULE_NAME = HCaptcha;
+				PRODUCT_NAME = HCaptcha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFD58617EF3534AC58245769086859ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E178A9782FE39019B34A232C2D4483AE /* HCaptcha.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HCaptcha";
+				IBSC_MODULE = HCaptcha;
+				INFOPLIST_FILE = "Target Support Files/HCaptcha/ResourceBundle-HCaptcha-HCaptcha-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = HCaptcha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B1CAB1DA9B8AFF055C553A24C35F3D5 /* Build configuration list for PBXNativeTarget "HCaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B68F15B1A2C81FFC2484A6073546BD7 /* Debug */,
+				DDFAB632748BA132D44052E3932017F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9087FD8CC0C1E977FC0D3F0CD9D3D9B8 /* Build configuration list for PBXNativeTarget "HCaptcha-HCaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD58617EF3534AC58245769086859ED /* Debug */,
+				022814B4CB76AC4515D0A7DDDEA77929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48FE6C2B63F124F95A8CD115DCEA882 /* Build configuration list for PBXNativeTarget "Pods-hcaptcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0A9EDA94071B66004E41B6A774E6CB /* Debug */,
+				9E27E80C24435797A4F013CBF9693F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
